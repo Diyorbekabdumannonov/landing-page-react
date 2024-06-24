@@ -1,8 +1,26 @@
 
+import Navbar from './components/Navbar'
+import Hero from "./components/Hero";
+import Platforms from './components/Platforms'
+import Projects from './components/Projects'
+import Calculation from './components/Calculation'
+import Pricing from './components/Pricing'
+import Comments from './components/Comments'
+import Footer from './components/Footer'
+import Banner from './components/Banner'
+
 function App() {
   return (
     <div>
-      <h1 className="text-red-500">ssd</h1>
+      <Navbar />
+      <Hero />
+      <Platforms />
+      <Projects />
+      <Calculation />
+      <Pricing />
+      <Comments />
+      <Banner />
+      <Footer />
     </div>
   );
 }
