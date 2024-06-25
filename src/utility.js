@@ -1,15 +1,16 @@
-import project1 from '../assets/project1.png'
-import project2 from '../assets/project2.png'
-import project3 from '../assets/project3.png'
-import githubLogo from '../assets/GitHub-Logo.png'
-import upworkLogo from '../assets/upwork.jpg'
-import vercelLogo from '../assets/vercel.jpg'
-import mdnLogo from '../assets/mdn.png'
-import phpLogo from '../assets/php.png'
-import reactLogo from '../assets/react-logo.png'
-import nodeLogo from '../assets/nodejs.webp'
-import angularLogo from '../assets/angular-logo.png'
-import userImg from '../assets/example5.png'
+import project1 from './assets/project1.png'
+import project2 from './assets/project2.png'
+import project3 from './assets/project3.png'
+import githubLogo from './assets/GitHub-Logo.png'
+import upworkLogo from './assets/upwork.jpg'
+import vercelLogo from './assets/vercel.jpg'
+import mdnLogo from './assets/mdn.png'
+import phpLogo from './assets/php.png'
+import reactLogo from './assets/react-logo.png'
+import nodeLogo from './assets/nodejs.webp'
+import angularLogo from './assets/angular-logo.png'
+import userImg from './assets/example5.png'
+import fiverLogo from './assets/fiver.jpg'
 
 export const platforms = [
     { title: "Web", description: "A Web App", imgUrl: phpLogo },
@@ -19,7 +20,7 @@ export const platforms = [
 ]
 
 export const cards = [
-    githubLogo, upworkLogo, vercelLogo, mdnLogo
+    githubLogo, upworkLogo, vercelLogo, fiverLogo, mdnLogo
 ]
 
 export const projects = [
@@ -94,3 +95,55 @@ export const navLinks = [
     { name: "Safety", href: "#" },
     { name: "Company", href: "#" },
 ]
+
+export const languages = [
+    { languageName: "FrontEnd", langs: ['html/css', 'bootstrap/tailwind', 'react/nextjs', 'angular'] },
+    { languageName: "Backend", langs: ['nodejs', 'php', 'mongodb'] },
+]
+
+
+export const highlightedText = [
+    `Lorem ipsum, dolor sit amet consectetur
+adipisicing elit. Itaque reprehenderit
+vero sint explicabo eligendi, porro ratione
+excepturi magnam ad, veritatis quaerat officiis
+nisi quam iusto quibusdam. Exercitationem
+perferendis maiores reiciendis iure.
+Numquam eligendi quidem laudantium. Incidunt
+obcaecati perspiciatis assumenda illum nobis
+sit animi aut ad veniam fugiat, eos laborum ullam.
+obcaecati perspiciatis assumenda illum nobis
+sit animi aut ad veniam fugiat, eos laborum ullam.`,
+    `
+import { JsonObject } from '@angular-devkit/core';
+  
+interface Options extends JsonObject {
+    source: string;
+    destination: string;
+}
+    
+export default createBuilder(copyFileBuilder);
+    
+  async function copyFileBuilder(
+    options: Options,
+    context: BuilderContext,
+  Promise<BuilderOutput> {}</code>`,
+    `<?php
+// create an object
+$Lightning = new Car();
+
+// show object properties
+echo $Lightning->model;
+// prints: mysql link
+$c = mysql_connect();
+echo get_resource_type($c) . "\n";
+    
+// prints: stream
+$fp = fopen("foo", "w");
+echo get_resource_type($fp) . "\n";
+    
+// prints: domxml document
+$doc = new_xmldoc("1.0");
+echo get_resource_type($doc->doc) . "\n";
+?>`
+] 

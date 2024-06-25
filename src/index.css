@@ -8,11 +8,11 @@
   }
 
   .menu-btn {
-    @apply w-[1.5rem] menu-btn md:hidden h-[1.5rem] flex flex-col items-center justify-center gap-[0.1875rem]
+    @apply w-[1.5rem] md:hidden h-[1.5rem] flex flex-col items-center justify-center gap-[0.1875rem]
   }
 
   .menu-line {
-    @apply w-[0.9375rem] h-[0.125rem] bg-dark-gray rounded-full transition ease-curve-d duration-300
+    @apply w-[0.9375rem] h-[0.125rem] bg-dark-gray rounded-full transition duration-300
   }
 
 
@@ -29,7 +29,7 @@
   }
 
   .btn {
-    @apply text-white font-semibold lg:py-3 py-2 rounded-full lg:px-6 px-3 text-sm lg:text-base;
+    @apply text-white font-semibold py-2 rounded-full lg:px-6 px-3 text-sm lg:text-base;
   }
 
   .title {
@@ -37,7 +37,7 @@
   }
 
   .inp {
-    @apply outline-none rounded-md mb-3 lg:py-3 py-2 px-2 text-black text-sm font-medium;
+    @apply outline-none rounded-md mb-3 p-2 text-black text-sm font-normal;
   }
 
   .inp ::placeholder {
@@ -49,7 +49,7 @@
   }
 
   .hover {
-    @apply shadow-[0_10px_40px_rgba(0, 0, 128, .05)] duration-300 hover:shadow-[0_15px_30px_rgba(0, 0, 128, .15)] cursor-pointer
+    @apply shadow-[0_10px_40px_rgba(0,0,128,.05)] duration-300 hover:shadow-[0_15px_30px_rgba(0,0,128,15)] cursor-pointer
   }
 
   .visibility:hover {
@@ -81,7 +81,7 @@
   }
 
   .btn-primary {
-    @apply h-12 px-12 rounded-full bg-gray750 text-white shadow-[0px_15px_30px_#fff] font-bold hover:bg-[#8585ff] hover:shadow-[0px_15px_30px_rgba(133, 133, 255, 0.2)] duration-200 transition-all
+    @apply h-12 px-12 rounded-full bg-gray750 text-white shadow-[0px_15px_30px_#fff] font-bold hover:bg-[#8585ff] hover:shadow-[0px_15px_30px_rgba(133,133,255,0.2)] duration-200 transition-all
   }
 
   .card {
@@ -108,16 +108,12 @@
     @apply mt-4 gap-4 md:gap-0 md:mt-0
   }
 
-  form {
-    @apply border-y justify-center border-[#dfdef4] border-collapse bg-white flex items-end h-14 rounded-full
-  }
-
   form button {
-    @apply w-14 border-[#dfdef4] h-14 border-collapse border-x rounded-full
+    @apply w-full border-[#dfdef4] border-collapse border-x rounded-full
   }
 
   form input {
-    @apply text-gray750 font-bold text-4xl max-w-12 outline-none text-right
+    @apply text-gray750 font-bold text-3xl w-full outline-none text-center
   }
 }
 
