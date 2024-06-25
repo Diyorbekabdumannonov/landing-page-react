@@ -19,7 +19,6 @@ function App() {
       <Calculation />
       <Pricing />
       <Comments />
-      <Banner />
       <Footer />
     </div>
   );

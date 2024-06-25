@@ -4,7 +4,7 @@ import { comments } from '../utility'
 export default function Comments() {
   return (
     <section className="inner-container px-4 xl:px-0 md:mt-28 mt-16">
-      <h3 className="md:text-5xl text-3xl font-semibold leading-snug text-center">
+      <h3 className="title text-center">
         What our customers are <br className="hidden sm:block" />
         saying about us
       </h3>
@@ -19,7 +19,7 @@ export default function Comments() {
                 <i className="fa-solid fa-star text-yellow-400 text-2xl"></i>
                 <i className="fa-solid fa-star text-yellow-400 text-2xl"></i>
               </div>
-              <p className="font-semibold mt-5 text-gray-700">
+              <p className="subtitle mt-0">
                 {comment}
               </p>
               <div className="flex items-start gap-4 mt-7">

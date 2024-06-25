@@ -14,10 +14,10 @@ export default function Calculation() {
             <div className="bg-primary py-1 px-3 gap-2 w-max rounded mx-auto lg:mx-0">
               <p className="text-[#d8d8ff] text-xs font-semibold">Estimator</p>
             </div>
-            <h2 className="mt-6 lg:text-5xl sm:text-4xl text-2xl leading-tight font-semibold text-center lg:text-left">
+            <h2 className="title text-white">
               Calculate your app
             </h2>
-            <p className="sm:mt-7 mt-4 text-sm sm:text-base font-medium text-gray-300 text-center lg:text-left">
+            <p className="subtitle text-white">
               Geniusee estimator will help you to calculate the expected development time of your application as well as
               budget based on our experience working with software products. Select the items below which best describes
               your app and the features you require.
@@ -35,15 +35,15 @@ export default function Calculation() {
             <h3 className="mt-3 mb-6 font-black text-2xl">What is your current or expected average hourly rate <br /> in USD per
               one team member ?</h3>
             <div className="flex items-center gap-5">
-              <form>
+              <form onSubmit={(e) => e.preventDefault()} className='border-y justify-center border-[#dfdef4] border-collapse bg-white flex items-end h-14 rounded-full '>
                 <button className='controlBtn'>-</button>
                 <div className="w-48 flex justify-center items-end">
-                  <input className="appearance-none" type="number" value="10" />
+                  <input className="appearance-none w-10" type="number" value="10" />
                   <p className="ml-1 font-normal text-[#7e7e9b]">$/hour</p>
                 </div>
                 <button className='controlBtn'>+</button>
               </form>
-              <p className="font-light">Define average hourly rate of your development team. It can be average hourly cost of
+              <p className="font-light mt-0 subtitle">Define average hourly rate of your development team. It can be average hourly cost of
                 your inhouse team
                 member or rates that you are paying to your technology partner.</p>
             </div>

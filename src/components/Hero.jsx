@@ -12,7 +12,7 @@ export default function Hero() {
                 <h1 className="title !mt-0">
                     See how we can help you reach your goals
                 </h1>
-                <p className="sm:mt-10 mt-4 sm:text-18 text-sm tracking-normal text-gray-700 font-medium max-w-96 text-center lg:text-left mx-auto lg:mx-0">
+                <p className="subtitle max-w-96">
                     Answer two questions to help us match our expertise and software solutions to your sector.
                 </p>
                 <h3 className="mt-8 font-bold text-gray750">What is your industry?</h3>
