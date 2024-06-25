@@ -36,6 +36,10 @@
     @apply sm:mt-10 mt-4 xl:leading-70 leading-tight font-black text-center lg:text-left xl:text-5xl lg:max-w-none md:max-w-900 max-w-475 mx-auto md:text-4xl sm:text-3xl text-2xl text-primary;
   }
 
+  .controlBtn {
+    @apply w-14 border-[#dfdef4] h-14 border-collapse border-x rounded-full
+  }
+
   .inp {
     @apply outline-none rounded-md mb-3 p-2 text-black text-sm font-normal;
   }
@@ -49,7 +53,7 @@
   }
 
   .hover {
-    @apply shadow-[0_10px_40px_rgba(0,0,128,.05)] duration-300 hover:shadow-[0_15px_30px_rgba(0,0,128,15)] cursor-pointer
+    @apply shadow-[0_10px_40px_#0000800] duration-300 hover:shadow-[0_15px_30px_#00008026] cursor-pointer
   }
 
   .visibility:hover {
@@ -81,7 +85,7 @@
   }
 
   .btn-primary {
-    @apply h-12 px-12 rounded-full bg-gray750 text-white shadow-[0px_15px_30px_#fff] font-bold hover:bg-[#8585ff] hover:shadow-[0px_15px_30px_rgba(133,133,255,0.2)] duration-200 transition-all
+    @apply h-12 px-12 rounded-full bg-gray750 text-white shadow-[0px_15px_30px_#fff] font-bold hover:bg-[#8585ff] hover:shadow-[0px_15px_30px_#8585ff33] duration-200 transition-all
   }
 
   .card {

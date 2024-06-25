@@ -36,12 +36,12 @@ export default function Calculation() {
               one team member ?</h3>
             <div className="flex items-center gap-5">
               <form>
-                <button>-</button>
+                <button className='controlBtn'>-</button>
                 <div className="w-48 flex justify-center items-end">
                   <input className="appearance-none" type="number" value="10" />
                   <p className="ml-1 font-normal text-[#7e7e9b]">$/hour</p>
                 </div>
-                <button>+</button>
+                <button className='controlBtn'>+</button>
               </form>
               <p className="font-light">Define average hourly rate of your development team. It can be average hourly cost of
                 your inhouse team
