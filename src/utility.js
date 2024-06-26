@@ -11,6 +11,14 @@ import nodeLogo from './assets/nodejs.webp'
 import angularLogo from './assets/angular-logo.png'
 import userImg from './assets/example5.png'
 import fiverLogo from './assets/fiver.jpg'
+import { FaFacebook, FaPhone, FaPrint } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaGoogle } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { FaHome } from "react-icons/fa";
+import { IoMdMail } from 'react-icons/io'
 
 export const platforms = [
     { title: "Web", description: "A Web App", imgUrl: phpLogo },
@@ -36,21 +44,21 @@ export const pricingInfo = [
 
 export const comments = [
     {
-        rate: 5, comment: "What you don't want as a CEO is to be burning time on operations when you're driving for sales & revenue. Once we committed to AngularCh, it changed the game for us.", user: {
+        rate: [1, 1, 1, 1, 1], comment: "What you don't want as a CEO is to be burning time on operations when you're driving for sales & revenue. Once we committed to AngularCh, it changed the game for us.", user: {
             imgUrl: userImg,
             name: "Jhonny Wolff",
             occupation: "Founder and CEO at Homeroom"
         }
     },
     {
-        rate: 5, comment: "What you don't want as a CEO is to be burning time on operations when you're driving for sales & revenue. Once we committed to AngularCh, it changed the game for us.", user: {
+        rate: [5], comment: "What you don't want as a CEO is to be burning time on operations when you're driving for sales & revenue. Once we committed to AngularCh, it changed the game for us.", user: {
             imgUrl: userImg,
             name: "Jhonny Wolff",
             occupation: "Founder and CEO at Homeroom"
         }
     },
     {
-        rate: 5, comment: "What you don't want as a CEO is to be burning time on operations when you're driving for sales & revenue. Once we committed to AngularCh, it changed the game for us.", user: {
+        rate: [5], comment: "What you don't want as a CEO is to be burning time on operations when you're driving for sales & revenue. Once we committed to AngularCh, it changed the game for us.", user: {
             imgUrl: userImg,
             name: "Jhonny Wolff",
             occupation: "Founder and CEO at Homeroom"
@@ -61,30 +69,27 @@ export const comments = [
 
 export const links = [
     {
-        columnName: 'Column One', links: [
-            { name: 'Link One', href: '#' },
-            { name: 'Link Two', href: '#' },
-            { name: 'Link Three', href: '#' },
-            { name: 'Link Four', href: '#' },
-            { name: 'Link Five', href: '#' }
+        columnName: 'PRODUCTS', links: [
+            { name: 'Angular', href: '#' },
+            { name: 'React', href: '#' },
+            { name: 'Vue', href: '#' },
+            { name: 'Laravel', href: '#' },
         ]
     },
     {
-        columnName: 'Column Two', links: [
-            { name: 'Link One', href: '#' },
-            { name: 'Link Two', href: '#' },
-            { name: 'Link Three', href: '#' },
-            { name: 'Link Four', href: '#' },
-            { name: 'Link Five', href: '#' }
+        columnName: 'USEFUL LINKS', links: [
+            { name: 'Pricing', href: '#' },
+            { name: 'Settings', href: '#' },
+            { name: 'Orders', href: '#' },
+            { name: 'Help', href: '#' },
         ]
     },
     {
-        columnName: 'Column Three', links: [
-            { name: 'Link One', href: '#' },
-            { name: 'Link Two', href: '#' },
-            { name: 'Link Three', href: '#' },
-            { name: 'Link Four', href: '#' },
-            { name: 'Link Five', href: '#' }
+        columnName: 'CONTACT', links: [
+            { icon: <FaHome />, name: 'New York, NY 10012, US', href: '#' },
+            { icon: <IoMdMail />, name: 'info@example.com', href: '#' },
+            { icon: <FaPhone />, name: '+01 234 567 88', href: '#' },
+            { icon: <FaPrint />, name: '+01 234 567 89', href: '#' },
         ]
     },
 ]
@@ -99,6 +104,15 @@ export const navLinks = [
 export const languages = [
     { languageName: "FrontEnd", langs: ['html/css', 'bootstrap/tailwind', 'react/nextjs', 'angular'] },
     { languageName: "Backend", langs: ['nodejs', 'php', 'mongodb'] },
+]
+
+export const icons = [
+    <FaFacebook />,
+    <FaXTwitter />,
+    <FaGoogle />,
+    <FaLinkedin />,
+    <FaInstagram />,
+    <FaGithub />
 ]
 
 

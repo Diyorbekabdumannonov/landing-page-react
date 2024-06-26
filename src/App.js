@@ -7,11 +7,10 @@ import Calculation from './components/Calculation'
 import Pricing from './components/Pricing'
 import Comments from './components/Comments'
 import Footer from './components/Footer'
-import Banner from './components/Banner'
 
 function App() {
   return (
-    <div>
+    <div className='overflow-x-hidden'>
       <Navbar />
       <Hero />
       <Platforms />

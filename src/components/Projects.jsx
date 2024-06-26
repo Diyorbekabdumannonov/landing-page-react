@@ -4,7 +4,7 @@ import ProjectCard from '../shared/card/ProjectCard'
 
 export default function Projects() {
   return (
-    <section className="bg-gray450 sm:py-24 py-16">
+    <section className="bg-secondary sm:py-24 py-16">
       <div className="inner-container px-4 xl:px-0">
         <h1 className="title lg:text-center">
           It pays to use AngularCh

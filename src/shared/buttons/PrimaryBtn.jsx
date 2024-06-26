@@ -1,7 +1,11 @@
 import React from 'react'
 
-export default function PrimaryBtn({ text, classname }) {
+export default function PrimaryBtn({ text, classname, onClick }) {
     return (
-        <button className={'btn-primary ' + classname}>{text}</button>
+        <button
+            onClick={() => onClick()}
+            className={'btn-primary ' + classname}>
+            {text}
+        </button>
     )
 }

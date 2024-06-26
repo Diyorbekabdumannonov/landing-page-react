@@ -3,9 +3,10 @@
 @tailwind utilities;
 
 @layer base {
-  /* h1 {
-    @apply font-size
-  } */
+  .slider-btn {
+    @apply w-10 h-10 p-0 flex items-center justify-center rounded-full text-primary border hover:bg-primary duration-200 hover:text-white
+  }
+
   .nav-logo {
     @apply w-28 cursor-pointer relative z-50
   }
@@ -17,7 +18,6 @@
   .menu-line {
     @apply w-[0.9375rem] h-[0.125rem] bg-dark-gray rounded-full transition duration-300
   }
-
 
   .logo {
     @apply lg:w-11 lg:h-11 w-8 h-8 object-cover;
@@ -45,14 +45,6 @@
 
   .controlBtn {
     @apply w-14 border-[#dfdef4] h-14 border-collapse border-x rounded-full
-  }
-
-  .inp {
-    @apply outline-none rounded-md mb-3 p-2 text-black text-sm font-normal;
-  }
-
-  .inp ::placeholder {
-    @apply text-sm font-medium;
   }
 
   .image {
@@ -92,27 +84,19 @@
   }
 
   .btn-primary {
-    @apply h-12 px-12 rounded-full bg-gray750 text-white shadow-[0px_15px_30px_#fff] font-bold hover:bg-[#8585ff] hover:shadow-[0px_15px_30px_#8585ff33] duration-200 transition-all
+    @apply sm:h-12 h-9 sm:px-12 px-6 text-sm sm:text-base rounded-full bg-gray750 text-white shadow-[0px_15px_30px_#fff] font-bold hover:bg-[#8585ff] hover:shadow-[0px_15px_30px_#8585ff33] duration-200 transition-all
   }
 
   .card {
-    @apply w-52 h-24 flex items-center justify-center rounded-[20px] hover
+    @apply xl:w-52 lg:w-48 md:w-36 md:h-24 sm:w-28 w-12 sm:p-6 sm:h-20 h-10 p-1 flex items-center justify-center sm:rounded-[20px] rounded hover
   }
 
   .card img {
     @apply w-24 cursor-pointer
   }
 
-  .search-animation {
-    @apply bg-[currentColor] w-[0.09375rem] h-[0.375rem] absolute top-[22px] left-[0.35rem] origin-[50%_-0.4375rem] -rotate-45 duration-[400ms] ease-out translate-y-[0.5625rem] rounded-b-full
-  }
-
   .search-btn:hover .search-animation {
     @apply rotate-45
-  }
-
-  .input {
-    @apply text-2xl sm:text-3xl md:text-5xl font-normal outline-none h-auto placeholder:text-secondary bg-transparent
   }
 
   ul {
@@ -126,19 +110,10 @@
   form input {
     @apply text-gray750 font-bold text-3xl w-full outline-none
   }
-}
 
-code, pre {
-  width: 500px;
-  height: 550px;
-  border-radius: 10px !important;
-  overflow: hidden;
-}
-
-.estimator {
-  background-image: url('./assets/rate-bg.svg');
-  background-repeat: no-repeat;
-  background-position: right;
+  code, pre {
+    @apply lg:w-[500px] lg:h-[550px] h-[400px] rounded-xl overflow-hidden
+  }
 }
 
 input::-webkit-inner-spin-button {

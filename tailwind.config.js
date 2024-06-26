@@ -10,17 +10,18 @@ module.exports = {
       colors: {
         primary: "#27273d",
         blue: "#3958d3",
-        gray450: "#f6f7f9",
+        gray450: "#8c8c8c",
         gray650: "#272d44",
         blue300: "#9fc9fd",
         blue500: "#3957d3",
         gray750: "#27273d",
         light: '#fff',
-        secondary: "#8c8c8c",
+        secondary: "#f6f7f9",
         'dark-gray': '#080808',
         gray: {
           660: "#616161",
-          670: "#f3f3ff"
+          670: "#f3f3ff",
+          light:"#e8e8ff"
         }
       },
       lineHeight: {

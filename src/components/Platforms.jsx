@@ -8,7 +8,7 @@ export default function Platforms() {
       <h1 className="font-extrabold text-2xl">
         The Platforms We Work
       </h1>
-      <div className="grid mt-6 lg:grid-cols-5 sm:grid-cols-2 grid-cols-1 gap-20">
+      <div className="grid mt-6 grid-cols-5 xl:gap-20 gap-4">
         {cards.map((cardLogo, index) => {
           return <LogoCard key={index} cardLogo={cardLogo} />
         })}

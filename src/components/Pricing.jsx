@@ -1,5 +1,8 @@
 import React from 'react'
 import { pricingInfo } from '../utility'
+import { FaGlasses } from "react-icons/fa";
+import { IoCheckmarkDone } from 'react-icons/io5';
+
 
 export default function Pricing() {
   return (
@@ -9,16 +12,17 @@ export default function Pricing() {
           We're an innovative platform <br className="hidden sm:block" />
           that will gives you:
         </h1>
-        <div className="flex items-center flex-col md:flex-row justify-center mt-16">
+        <div className="flex items-center flex-col md:flex-row gap-12 justify-center mt-16">
           {pricingInfo.map(({ title, facilities }, index) => {
-            return <div key={index} className="bg-gray650 rounded-2xl sm:p-8 p-4 md:mr-12 sm:w-440 w-full duration-200 visibility">
+            return <div key={index}
+              className="bg-gray650 rounded-2xl sm:p-8 p-4 sm:w-440 w-full duration-200 visibility">
               <div className="bg-blue300 duration-200 w-16 h-16 flex items-center justify-center rounded-full mt-2 icon">
-                <i className="fa-solid text-3xl text-blue fa-glasses"></i>
+                <FaGlasses className='text-2xl' />
               </div>
               <h3 className="subtitle text-3xl text-white">{title}</h3>
               {facilities.map((facility, index) => {
                 return <div key={index} className="flex items-center text-gray-400 gap-4 font-normal mt-6">
-                  <i className="fa-solid fa-arrow-right-long"></i>
+                  <IoCheckmarkDone className='text-white' />
                   <p className="subtitle mt-0 text-white">{facility}</p>
                 </div>
               })}
