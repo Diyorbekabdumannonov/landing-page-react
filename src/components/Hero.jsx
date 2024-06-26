@@ -8,7 +8,7 @@ export default function Hero() {
 
     return (
         <section className="bg-secondary">
-            <div className='flex pt-14 xl:pl-14 sm:px-10 px-4 xl:px-0 py-6 cont flex-col lg:flex-row items-center'>
+            <div className='flex pt-14 px-4 xl:px-0 py-6 inner-container flex-col lg:flex-row items-center'>
                 <div className="flex-1 lg:py-24 py-4 flex flex-col items-start">
                     <h1 className="title !mt-0">
                         See how we can help you reach your goals
@@ -35,7 +35,7 @@ export default function Hero() {
                                 })}
                     </div>
                 </div>
-                <div className="flex-1 w-full flex items-center xl:justify-center justify-center lg:justify-end">
+                <div className="flex-1 w-full flex items-center justify-center lg:justify-end">
                     {!selectedLanguage && <Highlight className='javascript'>
                         {highlightedText[0]}
                     </Highlight>}

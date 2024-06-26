@@ -38,8 +38,22 @@ export const projects = [
 ]
 
 export const pricingInfo = [
-    { title: "Full visibility", facilities: ['See all dashboard activity', 'Real time email notifications', 'Record and save whole process'] },
-    { title: "Full visibility", facilities: ['See all dashboard activity', 'Real time email notifications', 'Record and save whole process'] }
+    {
+        title: "Classic", facilities: [
+            'Table-based layout',
+            'Minimal use of high-resolution images and videos',
+            'Mainly Static pages',
+            "Often limited focus on accessibility standards"
+        ]
+    },
+    {
+        title: "Modern", facilities: [
+            'Grid and Flexbox for responsive layouts',
+            'high-resolution images, and animations',
+            'Interactive with dynamic content and user interactions',
+            "Strong focus on accessibility standards to ensure inclusivity"
+        ]
+    }
 ]
 
 export const comments = [
