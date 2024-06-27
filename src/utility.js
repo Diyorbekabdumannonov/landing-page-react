@@ -131,47 +131,55 @@ export const icons = [
 
 
 export const highlightedText = [
-    `Lorem ipsum, dolor sit amet consectetur
-adipisicing elit. Itaque reprehenderit
-vero sint explicabo eligendi, porro ratione
-excepturi magnam ad, veritatis quaerat officiis
-nisi quam iusto quibusdam. Exercitationem
-perferendis maiores reiciendis iure.
-Numquam eligendi quidem laudantium. Incidunt
-obcaecati perspiciatis assumenda illum nobis
-sit animi aut ad veniam fugiat, eos laborum ullam.
-obcaecati perspiciatis assumenda illum nobis
-sit animi aut ad veniam fugiat, eos laborum ullam.`,
     `
-import { JsonObject } from '@angular-devkit/core';
-  
+     Lorem ipsum, dolor sit amet consectetur
+     adipisicing elit. Itaque reprehenderit
+     vero sint explicabo eligendi, porro rat
+     ione excepturi magnam ad, veritatis qua
+     erat officiis nisi quam iusto quibusdam.
+     Exercitationem perferendis maiores re
+     iciendis iure. Numquam eligendi quidem 
+     laudantium. Incidunt obcaecati perspici
+     atis assumenda illum nobis sit animi au
+     t ad veniam fugiat, eos laborum ullam.
+     adipisicing elit. Itaque reprehenderit
+     vero sint explicabo eligendi, porro rat
+     ione excepturi magnam ad, veritatis qua
+     erat officiis nisi quam iusto quibusdam.
+     Exercitationem perferendis maiores re
+     iciendis iure. Numquam eligendi quidem 
+     laudantium. Incidunt obcaecati perspici
+     atis assumenda illum nobis sit animi au
+   `,
+    `import { JsonObject } from '@angular-devkit/core';
+
 interface Options extends JsonObject {
     source: string;
     destination: string;
 }
-    
+
 export default createBuilder(copyFileBuilder);
-    
-  async function copyFileBuilder(
+
+async function copyFileBuilder(
     options: Options,
     context: BuilderContext,
-  Promise<BuilderOutput> {}</code>`,
-    `<?php
+    Promise<BuilderOutput> {}</code > `,
+    `<? php
 // create an object
 $Lightning = new Car();
 
 // show object properties
-echo $Lightning->model;
+echo $Lightning -> model;
 // prints: mysql link
 $c = mysql_connect();
-echo get_resource_type($c) . "\n";
-    
+echo get_resource_type($c). "\n";
+
 // prints: stream
 $fp = fopen("foo", "w");
-echo get_resource_type($fp) . "\n";
-    
+echo get_resource_type($fp). "\n";
+
 // prints: domxml document
 $doc = new_xmldoc("1.0");
-echo get_resource_type($doc->doc) . "\n";
-?>`
+echo get_resource_type($doc -> doc). "\n";
+?> `
 ] 
